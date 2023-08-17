@@ -37,8 +37,8 @@ public class WebConfig {
         config.setMaxAge(3600L);
         //configuration added to all
         source.registerCorsConfiguration("/**", config);
-        FilterRegistrationBean bean = new FilterRegistrationBean (new CorsFilter(source));
-        bean.setOrder(-100);
+      FilterRegistrationBean bean = new FilterRegistrationBean(new CorsFilter(source));
+      bean.setOrder(-102);
         // should be set order to -100 because we need to CorsFilter before SpringSecurityFilter
         return bean;
     }
