@@ -9,6 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+//used for record and intertransmission
+//all fields wil not be filled together
 public class UserDto {
 
     private Long id;
